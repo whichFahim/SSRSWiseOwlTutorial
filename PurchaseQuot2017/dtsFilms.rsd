@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>dscMovies</DataSourceReference>
+      <CommandText>SELECT *
+FROM tblFilm
+ORDER BY FilmName</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="FilmID">
+        <DataField>FilmID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="FilmName">
+        <DataField>FilmName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="FilmReleaseDate">
+        <DataField>FilmReleaseDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="FilmRunTimeMinutes">
+        <DataField>FilmRunTimeMinutes</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="FilmDirectorID">
+        <DataField>FilmDirectorID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="FilmLanguageID">
+        <DataField>FilmLanguageID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="FilmCountryID">
+        <DataField>FilmCountryID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="FilmStudioID">
+        <DataField>FilmStudioID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="FilmSynopsis">
+        <DataField>FilmSynopsis</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="FilmCertificateID">
+        <DataField>FilmCertificateID</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="FilmBudgetDollars">
+        <DataField>FilmBudgetDollars</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="FilmBoxOfficeDollars">
+        <DataField>FilmBoxOfficeDollars</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="FilmOscarNominations">
+        <DataField>FilmOscarNominations</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="FilmOscarWins">
+        <DataField>FilmOscarWins</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
